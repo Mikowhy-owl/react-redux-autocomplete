@@ -12,5 +12,7 @@ Simple autocomplete input. It uses [jsonplaceholder users](https://jsonplacehold
 
 Running is simple as always - yarn or npm install && yarn or npm start
 
+### Screenshot
+<img src="https://i.imgur.com/uPvpgjD.png" width="439" height="324"/>
 
 
