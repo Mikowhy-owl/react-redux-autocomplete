@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+body {
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  min-width: 265px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-div {
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.form-div .input {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-div .input::placeholder {
+  color: rgb(117, 117, 117);
+}
+.form-div .submit-button {
+  padding: 10px;
+  background-color: DodgerBlue;
+  border: 1px solid transparent;
+  color: #fff;
+  margin-left: 10px;
+}
+.form-div .submit-button:hover {
+  cursor: pointer;
+  background-color: #0080ff;
+}
+.options-container {
+  max-height: 150px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #d4d4d4;
+}
+.options-container::-webkit-scrollbar {
+  width: 10px;
+}
+.options-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.options-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.options-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.option {
+  padding: 10px;
+  /* background-color: #e9e9e9; */
+  border-bottom: 1px solid #d4d4d4;
+}
+.option:hover {
+  cursor: pointer;
+  background: lightgray;
 }
